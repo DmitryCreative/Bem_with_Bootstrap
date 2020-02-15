@@ -93,6 +93,8 @@ ul, li {
 }
 
 .about__text {
+    letter-spacing: 1px;
+    line-height: 22px;
     color: #212121;
     font-size: 15px;
     margin-bottom: 110px;
@@ -104,3 +106,65 @@ ul, li {
     font-family: 'Open Sans Semibold';
     font-size: 20px;
 }
+
+/* Our Services */
+
+.services {
+    padding-top: 165px;
+    padding-bottom: 125px;
+    color: #000;
+    background: #e4fdf9;
+    text-align: center;
+}
+
+.our_card {
+    background: #fff;
+    padding: 50px 25px 40px;
+    transition: 0.3s;
+}
+
+.our_card:hover {
+    color: #fff;
+    background: #00897b;
+    box-shadow: 0px 10px 12px -3px rgba(0, 0, 0, 0.26);
+}
+
+.our_card:hover 
+.icon {
+    color: #fff;
+}
+
+.our_card:hover .button-services {
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.services .about_h3 {
+    margin-top: 40px;
+    margin-bottom: 30px;   
+}
+
+.services .about__text {
+    margin-bottom: 50px;
+}
+
+.icon {
+    transition: 0.3s;
+    font-size: 60px;
+    color: #000;
+}
+
+.button-services {
+    transition: 0.3s;
+    text-transform: uppercase;
+    border: 1px solid #000;
+    background: transparent;
+    padding: 18px 14px 20px;
+    letter-spacing: 1px;
+    font-family: 'Open Sans Semibold';
+}
+
+.button-services:hover{
+    cursor: pointer;
+}
+    
