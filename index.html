@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Сайт на Bootstrap 4 + BEM</title>
 </head>
+
 <body>
     <header class="menu-bar">
         <div class="container">
@@ -238,6 +239,52 @@
         </div>
     </section>
 
+    <!-- portfolio -->
+
+    <section class="portfolio justify-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl">
+                    <h2 class="about__title">
+                        Latest Works
+                    </h2>
+                    <p class="about__text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                    </p>
+                    <button val="on" class="button" filter="all">ALL</button>
+
+                    <button val="off" class="button" filter="wd">WEB DESIGN</button>
+
+                    <button val="off" class="button" filter="ud">UI/UX DESIGN</button>
+
+                    <button val="off" class="button" filter="moc">MOCKUPS</button>
+                </div>
+            </div>
+            <div class="row filter">
+                <div filter="wd" class="col-xl-4"><img src="img/item1.png" alt=""></div>
+
+                <div filter="moc" class="col-xl-4"><img src="img/item2.png" alt=""></div>
+
+                <div filter="wd" class="col-xl-4"><img src="img/item3.png" alt=""></div>
+
+                <div filter="moc" class="col-xl-4"><img src="img/item4.png" alt=""></div>
+
+                <div filter="ud" class="col-xl-4"><img src="img/item5.png" alt=""></div>
+
+                <div filter="ud" class="col-xl-4"><img src="img/item6.png" alt=""></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xl-12">
+                <button class="button">
+                    VIEW ALL
+                </button>
+            </div>
+        </div>
+    </section>
+
 
 
     <!-- Optional JavaScript -->
@@ -245,5 +292,6 @@
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

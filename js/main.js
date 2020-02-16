@@ -1,26 +1,37 @@
-$(function() {
-     $('.load-more').on('click', function() {
-          const btn = $(this);
-          const loader = btn.find('span');
-          $.ajax({
-               url: '/data.html',
-               type: 'GET',
-               beforeSend: function() {
-                    btn.attr('disabled', true);
-                    loader.addClass('d-inline-block');
-               },
-               success: function(responce) {
-                    setTimeout(function() {
-                         loader.removeClass('d-inline-block');
-                         btn.attr('disabled', false);
-                         console.log(responce);
-                    }, 1000);
-               },
-               error: function() {
-                    alert('Error!');
-                    loader.removeClass('d-inline-block');
-                    btn.attr('disabled', false);
-               }
-          });
-     });
+$(document).ready(function() {
+     $('.button[filter="wd"]').click(function(){
+          if($(this).attr('val')=='off') {
+               $('.button[filter]').attr('val', 'off');
+               $(this).attr('val', 'on');
+               $('.filter > div').hide(300);
+               $('.filter > div[filter="wd"]').show(300);
+          }
+          
+     })
+     $('.button[filter="ud"]').click(function () {
+          if ($(this).attr('val') == 'off') {
+               $('.button[filter]').attr('val', 'off');
+               $(this).attr('val', 'on');
+               $('.filter > div').hide(300);
+               $('.filter > div[filter="ud"]').show(300);
+          }
+
+     })
+     $('.button[filter="moc"]').click(function () {
+          if ($(this).attr('val') == 'off') {
+               $('.button[filter]').attr('val', 'off');
+               $(this).attr('val', 'on');
+               $('.filter > div').hide(300);
+               $('.filter > div[filter="moc"]').show(300);
+          }
+
+     })
+     $('.button[filter="all"]').click(function () {
+          if ($(this).attr('val') == 'off') {
+               $('.button[filter]').attr('val', 'off');
+               $(this).attr('val', 'on');
+               $('.filter > div').show(300);
+          }
+
+     })
 });
