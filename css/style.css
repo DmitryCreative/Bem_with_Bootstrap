@@ -168,7 +168,9 @@ ul, li {
     padding-bottom: 135px;
 }
 
-.portfolio .button:hover {
+.portfolio .button:hover,
+.focused {
+    /*  добавил дополнительный класс .focused */
     color: #000;
     border: 2px solid #00897b;
     background: transparent;
