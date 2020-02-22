@@ -391,9 +391,14 @@ div[filter]:hover .text {
 }
 
 .blog a {
+    text-decoration: none;
     font-size: 25px;
     color: #212121;
     font-family: 'Open Sans Semibold';
+}
+
+.blog a:hover {
+    color: #00897b;
 }
 
 .blog div {
