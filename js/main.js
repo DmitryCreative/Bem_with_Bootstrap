@@ -75,15 +75,19 @@ $(document).ready(function () {
           dots: true,
           dotsClass: 'dots-style',
           // из слайда в 3 сделал слайд в 2
-          responsive: [
-               {
-                    breakpoint: 1024,
-                    settings: {
-                         slidesToShow: 2,
-                         slidesToScroll: 2,
-                    }
+          responsive: [{
+               breakpoint: 1025,
+               settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
                }
-          ]               
+          },{
+               breakpoint: 480,
+               settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+               }
+          }]               
      });
 
      // меню
